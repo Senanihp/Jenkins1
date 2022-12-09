@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-17T17:19:11 IST" name="Suite" finished-at="2022-11-17T17:20:45 IST" duration-ms="94668">
+    <groups>
+    </groups>
+    <test started-at="2022-11-17T17:19:11 IST" name="Test" finished-at="2022-11-17T17:20:45 IST" duration-ms="94668">
+      <class name="maven_test.Demo_web_shop_searchTest">
+        <test-method signature="Tc_Search()[pri:0, instance:maven_test.Demo_web_shop_searchTest@3e96bacf]" started-at="2022-11-17T17:19:47 IST" name="Tc_Search" finished-at="2022-11-17T17:20:45 IST" duration-ms="58236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Search -->
+      </class> <!-- maven_test.Demo_web_shop_searchTest -->
+      <class name="maven_test.MavenDemoTest">
+        <test-method signature="Demo()[pri:0, instance:maven_test.MavenDemoTest@fd07cbb]" started-at="2022-11-17T17:19:11 IST" name="Demo" finished-at="2022-11-17T17:19:11 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+      </class> <!-- maven_test.MavenDemoTest -->
+      <class name="maven_test.Register_Testcase">
+        <test-method signature="Reg()[pri:0, instance:maven_test.Register_Testcase@3571b748]" started-at="2022-11-17T17:19:11 IST" name="Reg" finished-at="2022-11-17T17:19:47 IST" duration-ms="36398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reg -->
+      </class> <!-- maven_test.Register_Testcase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
