@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,6 +24,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
@@ -49,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\java programs\Sample_Maven_ELF39\testng.xml</span>
+                    <span>C:\Users\senan\git\SenJen\Sample_Maven_ELF39\testng111.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,12 +109,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="maven_test.Register_Testcase" class="method navigator-link" hash-for-method="Reg">Reg</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="maven_test.Demo_web_shop_searchTest" class="method navigator-link" hash-for-method="Tc_Search">Tc_Search</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="maven_test.Dummy_Test" class="method navigator-link" hash-for-method="Dummy">Dummy</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,21 +124,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">maven_test.Register_Testcase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Reg">
-                  </a> <!-- Reg -->
-                  <span class="method-name">Reg</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -160,14 +142,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">maven_test.Demo_web_shop_searchTest</span>
+              <span class="class-name">maven_test.Dummy_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Tc_Search">
-                  </a> <!-- Tc_Search -->
-                  <span class="method-name">Tc_Search</span>
+                  <a name="Dummy">
+                  </a> <!-- Dummy -->
+                  <span class="method-name">Dummy</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,7 +157,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\java programs\Sample_Maven_ELF39\testng.xml</span>
+            <span class="header-content">C:\Users\senan\git\SenJen\Sample_Maven_ELF39\testng111.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -184,9 +166,8 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;maven_test.Dummy_Test&quot;/&gt;
       &lt;class name=&quot;maven_test.MavenDemoTest&quot;/&gt;
-      &lt;class name=&quot;maven_test.Register_Testcase&quot;/&gt;
-      &lt;class name=&quot;maven_test.Demo_web_shop_searchTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -200,7 +181,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,24 +207,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Tc_Search')
-data.setCell(0, 2, 'maven_test.Demo_web_shop_searchTest')
-data.setCell(0, 3, 58236);
+data.setCell(0, 1, 'Dummy')
+data.setCell(0, 2, 'maven_test.Dummy_Test')
+data.setCell(0, 3, 6);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Reg')
-data.setCell(1, 2, 'maven_test.Register_Testcase')
-data.setCell(1, 3, 36398);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Demo')
-data.setCell(2, 2, 'maven_test.MavenDemoTest')
-data.setCell(2, 3, 5);
+data.setCell(1, 1, 'Demo')
+data.setCell(1, 2, 'maven_test.MavenDemoTest')
+data.setCell(1, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 7 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -269,28 +246,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">maven_test.MavenDemoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">maven_test.Dummy_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Demo</span>
+                <span class="method-name">Dummy</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">maven_test.Register_Testcase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">maven_test.MavenDemoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Reg</span>
+                <span class="method-name">Demo</span>
                 <span class="method-start">9 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">maven_test.Demo_web_shop_searchTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Tc_Search</span>
-                <span class="method-start">36409 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
