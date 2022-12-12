@@ -10,13 +10,14 @@ import org.testng.annotations.BeforeClass;
 
 public class Base_Test {
 	public WebDriver driver;
+	
 	@BeforeClass
 	public void BrowserSetup() throws IOException {
 	System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 	  driver=new ChromeDriver();
 	 //driver.get("https://demowebshop.tricentis.com/");
-	  String url=Utility_Methods.Test_config();
-	  driver.get(url);
+	//  String url=Utility_Methods.Test_config();
+	//  driver.get(url);
 	 driver.manage().window().maximize();
 	 
 	}
